@@ -43,8 +43,8 @@ export default function App() {
     //     <Greeting name='Valeera' />
     //   </View>
     // <Travel/>
-    // <Resort/>
-    <Health/>
+    <Resort/>
+    // <Health/>
   );
 }
 

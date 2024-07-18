@@ -3,14 +3,12 @@ import { Text, TouchableOpacity, View } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 export default function Heartbeat() {    
-    const [num, setNum] = useState("0");
+    const [num, setNum] = useState(0);
 
     console.log("STATE : ", num);
     const PressHeart = () => {
-        let nums = num+=1;
-        setNum(nums);
-        console.log(num);
-        console.log(nums);
+        
+        setNum(num+1);
     };
     return (
         <View>

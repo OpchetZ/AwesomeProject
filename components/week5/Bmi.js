@@ -13,12 +13,12 @@ export default function Bmi() {
     console.log("Calculate button is pressed!!!");
     let output = weight / (((height / 100) * height) / 100);
     setBmi(output.toFixed(2));
-    console.log(bmi);
+    console.log(output);
     let des = "";
-    if (bmi < 18.5) des = "Underweight";
-    else if (bmi >= 18.5 && bmi <= 24.99) des = "Normal";
-    else if (bmi >= 25 && bmi <= 29.99) des = "Overweight";
-    else if (bmi >= 30 && bmi <= 39.99) des = "Obese";
+    if (output < 18.5) des = "Underweight";
+    else if (output >= 18.5 && output <= 24.99) des = "Normal";
+    else if (output >= 25 && output <= 29.99) des = "Overweight";
+    else if (output >= 30 && output <= 39.99) des = "Obese";
     else des = "Morbidly Obese";
     setJJ(des);
     console.log(jj);
