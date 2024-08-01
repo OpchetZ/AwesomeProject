@@ -21,6 +21,7 @@ import Travel from './screens/week3/Tarvel';
 import Resort from './screens/week3/Resort';
 import Health from './screens/week5/Health';
 import Home from './screens/week6/Home';
+import FlatListExample from './screens/week6/FlatListExample';
 export default function App() {
   return (
   //  <Welcome/>
@@ -47,6 +48,7 @@ export default function App() {
     // <Resort/>
     // <Health/>
     <Home/>
+    // <FlatListExample/>
   );
 }
 
