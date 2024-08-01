@@ -20,6 +20,7 @@ import Greeting from './components/Greeting';
 import Travel from './screens/week3/Tarvel';
 import Resort from './screens/week3/Resort';
 import Health from './screens/week5/Health';
+import Home from './screens/week6/Home';
 export default function App() {
   return (
   //  <Welcome/>
@@ -43,8 +44,9 @@ export default function App() {
     //     <Greeting name='Valeera' />
     //   </View>
     // <Travel/>
-    <Resort/>
+    // <Resort/>
     // <Health/>
+    <Home/>
   );
 }
 
