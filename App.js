@@ -22,33 +22,14 @@ import Resort from './screens/week3/Resort';
 import Health from './screens/week5/Health';
 import Home from './screens/week6/Home';
 import FlatListExample from './screens/week6/FlatListExample';
+import { NavigationContainer } from '@react-navigation/native';
+import HomeStack from './navigations/HomeStack';
+import BottomTab from './navigations/ฺBottomTab';
 export default function App() {
   return (
-  //  <Welcome/>
-  // <Ex01/>
-  // <Ex02/>
-  // <Ex03/>
-  // <Ex04/>
-  // <Ex05/>
-  // <Ex06/>
-  // <Ex07/>
-  // <Ex08/>
-  // <Ex09/>
-  // <Ex10/>
-  // <Ex11/>
-  // <Ex12/>
-    // <Extra/>
-    // <Test/>
-    // <View style={{alignItems: 'center', top: 50}}>
-    //     <Greeting name='Rexxar' />
-    //     <Greeting name='Jaina' />
-    //     <Greeting name='Valeera' />
-    //   </View>
-    // <Travel/>
-    // <Resort/>
-    // <Health/>
-    <Home/>
-    // <FlatListExample/>
+    <NavigationContainer>
+    <BottomTab/>
+</NavigationContainer>
   );
 }
 
