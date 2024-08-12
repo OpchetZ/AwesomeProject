@@ -7,6 +7,7 @@ import Home from '../screens/week6/Home';
 import Ant from '../screens/week7/Ant';
 import Bird from '../screens/week7/Bird';
 import Cat from '../screens/week7/Cat';
+import HomeStack from './HomeStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,8 +15,8 @@ export default function BottomTab() {
     return (
         <Tab.Navigator screenOptions={{ tabBarActiveTintColor: 'tomato', tabBarInactiveTintColor: 'gray' }}>
           <Tab.Screen
-            name="Home"
-            component={Home}
+            name="HomeStack"
+            component={HomeStack}
             options={{
               tabBarLabel: "หน้าหลัก",
               tabBarIcon: ({ color, size }) => ( <FontAwesome name="home" color={color} size={size} /> ),
@@ -46,6 +47,7 @@ export default function BottomTab() {
               tabBarIcon: ({ color, size }) => ( <FontAwesome name="paw" color={color} size={size} /> ),
             }}
           />
+          
         </Tab.Navigator>
       );
     

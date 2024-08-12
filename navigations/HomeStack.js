@@ -12,18 +12,26 @@ import Ex09 from '../screens/week2/Ex09';
 import Ex10 from '../screens/week2/Ex10';
 import Ex11 from '../screens/week2/Ex11';
 import Ex12 from '../screens/week2/Ex12';
+import Home from '../screens/week6/Home';
+import Travel from '../screens/week3/Tarvel';
 
 
 const Stack = createStackNavigator();
 
 export default function HomeStack() {
     return (
-        <Stack.Navigator initialRouteName="Ex01">
+        <Stack.Navigator initialRouteName="Home">
+          <Stack.Screen
+            name="Home"
+            component={Home}
+            options={{ title: "Home",headerShown:false }}
+          />      
+          <Stack.Screen name="Tarvel" component={Travel} options={{ title : "Travel" }}  />
           <Stack.Screen
             name="Ex01"
             component={Ex01}
             options={{ title: "Exercise 1" }}
-          />      
+          />
           <Stack.Screen
             name="Ex02"
             component={Ex02}

@@ -25,10 +25,12 @@ import FlatListExample from './screens/week6/FlatListExample';
 import { NavigationContainer } from '@react-navigation/native';
 import HomeStack from './navigations/HomeStack';
 import BottomTab from './navigations/ฺBottomTab';
+import RootStack from './navigations/RootStack';
 export default function App() {
   return (
     <NavigationContainer>
-    <BottomTab/>
+    {/* <BottomTab/> */}
+    <RootStack/>
 </NavigationContainer>
   );
 }
