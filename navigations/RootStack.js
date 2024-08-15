@@ -10,7 +10,7 @@ import Health from "../screens/week5/Health";
 const Stack = createStackNavigator();
 
 export default function RootStack() {
-  return (
+  return ( 
     <Stack.Navigator initialRouteName="BottomTab">
       <Stack.Screen name="BottomTab" component={BottomTab} options={{ headerShown: false }} />
       <Stack.Screen name="PokemonTab" component={PokemonTab} options={{ title : "Pokemon World" }}  />
