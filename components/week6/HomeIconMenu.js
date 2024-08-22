@@ -3,7 +3,7 @@ import React from "react";
 import { View, TextInput, } from "react-native";
 import MyIcon from "../week3/MyIcon";
 import { useNavigation } from "@react-navigation/native";
-
+import Icon from 'react-native-vector-icons/FontAwesome5';
 export default function HomeIconMenu() {
     const navigation = useNavigation();
     return (
