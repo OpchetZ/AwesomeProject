@@ -26,12 +26,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import HomeStack from './navigations/HomeStack';
 import BottomTab from './navigations/ฺBottomTab';
 import RootStack from './navigations/RootStack';
+import ChartKitScreen from './screens/week5/ChartKitScreen';
 export default function App() {
   return (
     <NavigationContainer>
-    {/* <BottomTab/> */}
+    
     <RootStack/>
 </NavigationContainer>
+ 
   );
 }
 

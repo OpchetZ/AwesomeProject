@@ -13,13 +13,13 @@ const Tab = createBottomTabNavigator();
 
 export default function BottomTab() {
     return (
-        <Tab.Navigator screenOptions={{ tabBarActiveTintColor: 'tomato', tabBarInactiveTintColor: 'gray' }}>
+        <Tab.Navigator screenOptions={{ tabBarActiveTintColor: 'tomato', tabBarInactiveTintColor: 'gray',tabBarStyle:{ height:70 },tabBarLabelStyle:{fontSize:20} }}>
           <Tab.Screen
             name="HomeStack"
             component={HomeStack}
             options={{
               tabBarLabel: "หน้าหลัก",
-              tabBarIcon: ({ color, size }) => ( <FontAwesome name="home" color={color} size={size} /> ),
+              tabBarIcon: ({ color, size }) => ( <FontAwesome name="home" color={color} size={50} /> ),
               headerShown : false,
             }}
           />
@@ -28,7 +28,7 @@ export default function BottomTab() {
             component={Ant}
             options={{
               tabBarLabel: "มด",
-              tabBarIcon: ({ color, size }) => ( <FontAwesome name="bug" color={color} size={size} /> ),
+              tabBarIcon: ({ color, size }) => ( <FontAwesome name="bug" color={color} size={50} /> ),
             }}
           />
           <Tab.Screen
@@ -36,7 +36,7 @@ export default function BottomTab() {
             component={Bird}
             options={{
               tabBarLabel: "นก",
-              tabBarIcon: ({ color, size }) => ( <FontAwesome name="twitter" color={color} size={size} /> ),
+              tabBarIcon: ({ color, size }) => ( <FontAwesome name="twitter" color={color} size={50} /> ),
             }}
           />
           <Tab.Screen
@@ -44,7 +44,7 @@ export default function BottomTab() {
             component={Cat}
             options={{
               tabBarLabel: "แมว",
-              tabBarIcon: ({ color, size }) => ( <FontAwesome name="paw" color={color} size={size} /> ),
+              tabBarIcon: ({ color, size }) => ( <FontAwesome name="paw" color={color} size={50} /> ),
             }}
           />
           
